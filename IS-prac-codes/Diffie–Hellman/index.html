@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Diffie-Hellman Key Exchange</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+
+      input {
+        padding: 8px;
+        margin: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .box {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Diffie-Hellman Key Exchange</h1>
+
+    <h3>Alice Inputs</h3>
+
+    <input type="number" id="p" placeholder="Enter Prime Number (p)" />
+    <br />
+
+    <input type="number" id="g" placeholder="Enter Primitive Root (g)" />
+    <br />
+
+    <input
+      type="number"
+      id="alicePrivate"
+      placeholder="Enter Alice Private Key"
+    />
+    <br />
+
+    <button onclick="performDH()">Generate Shared Secret</button>
+
+    <div class="box" id="output"></div>
+
+    <script>
+      // Modular exponentiation
+      function modPower(base, exponent, mod) {
+        let result = 1;
+
+        for (let i = 0; i < exponent; i++) {
+          result = (result * base) % mod;
+        }
+
+        return result;
+      }
+
+      function performDH() {
+        let p = parseInt(document.getElementById("p").value);
+
+        let g = parseInt(document.getElementById("g").value);
+
+        let a = parseInt(document.getElementById("alicePrivate").value);
+
+        // Bob private key generated automatically
+        let b = Math.floor(Math.random() * 10) + 1;
+
+        // Alice public key
+        let A = modPower(g, a, p);
+
+        // Bob public key
+        let B = modPower(g, b, p);
+
+        // Shared secrets
+        let aliceSecret = modPower(B, a, p);
+
+        let bobSecret = modPower(A, b, p);
+
+        let result = "";
+
+        result += "<h3>Public Values</h3>";
+
+        result += "Prime Number (p): " + p + "<br>";
+        result += "Primitive Root (g): " + g + "<br><br>";
+
+        result += "<h3>Private Keys</h3>";
+
+        result += "Alice Private Key (a): " + a + "<br>";
+
+        result += "Bob Private Key (b): " + b + "<br><br>";
+
+        result += "<h3>Public Keys</h3>";
+
+        result += "Alice Public Key (A = g^a mod p): " + A + "<br>";
+
+        result += "Bob Public Key (B = g^b mod p): " + B + "<br><br>";
+
+        result += "<h3>Shared Secret Calculation</h3>";
+
+        result +=
+          "Alice Computes: " +
+          B +
+          "^" +
+          a +
+          " mod " +
+          p +
+          " = " +
+          aliceSecret +
+          "<br>";
+
+        result +=
+          "Bob Computes: " +
+          A +
+          "^" +
+          b +
+          " mod " +
+          p +
+          " = " +
+          bobSecret +
+          "<br><br>";
+
+        result += "<h2>Final Shared Secret Key: " + aliceSecret + "</h2>";
+
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
