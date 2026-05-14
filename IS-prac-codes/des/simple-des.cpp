@@ -31,7 +31,7 @@ string expansion(string right) {
            string(1, right[3]);
 }
 
-// Simple S-Box
+// Improved S-Box (all 4-bit cases)
 string sbox(string bits) {
 
     if(bits == "0000") return "111";
@@ -43,7 +43,17 @@ string sbox(string bits) {
     if(bits == "0110") return "101";
     if(bits == "0111") return "000";
 
-    return "111";
+    if(bits == "1000") return "110";
+    if(bits == "1001") return "101";
+    if(bits == "1010") return "011";
+    if(bits == "1011") return "001";
+
+    if(bits == "1100") return "100";
+    if(bits == "1101") return "010";
+    if(bits == "1110") return "000";
+    if(bits == "1111") return "111";
+
+    return "000";
 }
 
 // Feistel Function
@@ -94,6 +104,8 @@ int main() {
     cout << "\nInitial Left  : " << left << endl;
     cout << "Initial Right : " << right << endl;
 
+    // ================= ENCRYPTION =================
+
     // Round 1
     string temp = right;
 
@@ -124,6 +136,48 @@ int main() {
     string cipher = left + right;
 
     cout << "\nEncrypted Text: " << cipher << endl;
+
+    // ================= DECRYPTION =================
+
+    cout << "\n========== DECRYPTION ==========" << endl;
+
+    // Split cipher text
+    left = cipher.substr(0,4);
+    right = cipher.substr(4,4);
+
+    cout << "\nCipher Left  : " << left << endl;
+    cout << "Cipher Right : " << right << endl;
+
+    // Reverse Round 2
+    temp = left;
+
+    fOutput = feistel(left, key);
+
+    left = xorOperation(right, fOutput);
+
+    right = temp;
+
+    cout << "\nAfter Reverse Round 2" << endl;
+    cout << "Left  : " << left << endl;
+    cout << "Right : " << right << endl;
+
+    // Reverse Round 1
+    temp = left;
+
+    fOutput = feistel(left, key);
+
+    left = xorOperation(right, fOutput);
+
+    right = temp;
+
+    cout << "\nAfter Reverse Round 1" << endl;
+    cout << "Left  : " << left << endl;
+    cout << "Right : " << right << endl;
+
+    // Final Plaintext
+    string decrypted = left + right;
+
+    cout << "\nDecrypted Text: " << decrypted << endl;
 
     return 0;
 }
