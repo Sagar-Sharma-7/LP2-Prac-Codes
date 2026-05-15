@@ -394,3 +394,20 @@ SPACE COMPLEXITY
 O(V)
 
 */
+/*
+
+=====================================================
+2. A* ALGORITHM
+APPLICATIONS
+=====================================================
+
+1. GPS Navigation Systems
+2. Robotics Path Planning
+3. Video Game AI
+4. Maze Solving
+5. Self-Driving Cars
+6. Airline Route Optimization
+7. Network Routing
+8. Logistics and Delivery Optimization
+
+*/
