@@ -467,3 +467,36 @@ O(n)
 =====================================================
 
 */
+/*
+
+=====================================================
+5(I). SINGLE SOURCE SHORTEST PATH
+(DIJKSTRA ALGORITHM)
+APPLICATIONS
+=====================================================
+
+1. GPS Navigation Systems
+2. Internet Routing Protocols
+3. Airline Route Planning
+4. Robotics Pathfinding
+5. Delivery Applications
+6. Video Game Navigation
+7. Network Packet Routing
+8. Traffic Management Systems
+
+
+=====================================================
+5(II). JOB SCHEDULING PROBLEM
+APPLICATIONS
+=====================================================
+
+1. CPU Process Scheduling
+2. Manufacturing Systems
+3. Cloud Computing Task Scheduling
+4. Airline Scheduling
+5. Hospital Appointment Systems
+6. Advertisement Scheduling
+7. Project Management
+8. Industrial Production Planning
+
+*/
