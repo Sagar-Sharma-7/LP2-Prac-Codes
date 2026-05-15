@@ -422,3 +422,35 @@ BREAKING POINTS
 =====================================================
 
 */
+/*
+
+=====================================================
+4(I). SELECTION SORT
+APPLICATIONS
+=====================================================
+
+1. Sorting Small Datasets
+2. Embedded Systems
+3. Educational Purposes
+4. Resource-Constrained Devices
+5. Selecting Smallest/Largest Elements
+6. Basic Data Organization
+7. Memory Efficient Sorting
+8. IoT Devices
+
+
+=====================================================
+4(II). MINIMUM SPANNING TREE (MST)
+APPLICATIONS
+=====================================================
+
+1. Computer Network Design
+2. Road Network Construction
+3. Electric Power Distribution
+4. Water Pipeline Systems
+5. Railway Network Planning
+6. PCB Circuit Design
+7. Telecommunication Networks
+8. Cable TV Network Design
+
+*/
