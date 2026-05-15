@@ -339,3 +339,20 @@ Rescue Treasure
 
 ====================================================
 */
+/*
+
+=====================================================
+3. AO* ALGORITHM
+APPLICATIONS
+=====================================================
+
+1. Medical Diagnosis Systems
+2. AI Planning Systems
+3. Robotics Task Planning
+4. Expert Systems
+5. Problem Reduction Systems
+6. Game AI
+7. Natural Language Processing
+8. Project Management Systems
+
+*/
