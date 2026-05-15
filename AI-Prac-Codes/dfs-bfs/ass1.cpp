@@ -320,3 +320,36 @@ Advanced AI algorithms like:
 are built using concepts of DFS and BFS.
 
 */
+
+/*
+
+=====================================================
+1. DEPTH FIRST SEARCH (DFS)
+APPLICATIONS
+=====================================================
+
+1. Maze Solving
+2. Cycle Detection in Graphs
+3. Topological Sorting
+4. Web Crawlers
+5. File System Traversal
+6. AI Puzzle Solving
+7. Connected Components Detection
+8. Path Finding in Games
+
+
+=====================================================
+BREADTH FIRST SEARCH (BFS)
+APPLICATIONS
+=====================================================
+
+1. Shortest Path in Unweighted Graphs
+2. GPS Navigation Systems
+3. Social Networking Friend Suggestions
+4. Web Crawling
+5. Broadcasting in Networks
+6. AI Pathfinding
+7. Peer-to-Peer Networks
+8. Network Routing
+
+*/
