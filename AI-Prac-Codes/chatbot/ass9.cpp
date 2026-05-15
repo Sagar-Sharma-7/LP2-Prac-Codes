@@ -226,3 +226,20 @@ SPACE COMPLEXITY
 O(1)
 
 */
+/*
+
+=====================================================
+9. ELEMENTARY CHATBOT
+APPLICATIONS
+=====================================================
+
+1. Customer Support Systems
+2. FAQ Bots
+3. Banking Assistance Bots
+4. Hospital Appointment Bots
+5. College Inquiry Systems
+6. Railway/Airline Information Systems
+7. Food Ordering Assistants
+8. E-commerce Support Systems
+
+*/
