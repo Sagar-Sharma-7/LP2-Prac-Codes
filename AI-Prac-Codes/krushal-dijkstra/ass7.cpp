@@ -537,3 +537,35 @@ BREAKING POINTS
 =====================================================
 
 */
+/*
+
+=====================================================
+7(I). KRUSKAL'S MINIMUM SPANNING TREE
+APPLICATIONS
+=====================================================
+
+1. Network Cable Optimization
+2. Railway Network Planning
+3. Electrical Grid Connections
+4. Road Map Construction
+5. Water Distribution Systems
+6. Cluster Analysis in Machine Learning
+7. Image Segmentation
+8. Telecommunication Networks
+
+
+=====================================================
+7(II). DIJKSTRA ALGORITHM
+APPLICATIONS
+=====================================================
+
+1. GPS Navigation
+2. Internet Routing
+3. Airline Path Optimization
+4. Robotics Navigation
+5. Shortest Path in Games
+6. Delivery Route Optimization
+7. Traffic Navigation Systems
+8. Communication Networks
+
+*/
