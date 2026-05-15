@@ -433,3 +433,35 @@ BREAKING POINTS
 =====================================================
 
 */
+/*
+
+=====================================================
+8(I). N-QUEENS PROBLEM
+APPLICATIONS
+=====================================================
+
+1. Chess AI
+2. Resource Allocation Problems
+3. Parallel Processing
+4. Constraint Satisfaction Problems
+5. Scheduling Systems
+6. Puzzle Solving AI
+7. Robotics Position Planning
+8. Backtracking Algorithm Learning
+
+
+=====================================================
+8(II). GRAPH COLORING PROBLEM
+APPLICATIONS
+=====================================================
+
+1. Map Coloring
+2. Timetable Scheduling
+3. Register Allocation in Compilers
+4. Frequency Assignment in Mobile Networks
+5. Sudoku Solving
+6. Task Scheduling
+7. Resource Allocation
+8. Traffic Signal Scheduling
+
+*/
