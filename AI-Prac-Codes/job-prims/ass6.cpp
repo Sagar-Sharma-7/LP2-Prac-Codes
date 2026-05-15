@@ -485,3 +485,35 @@ BREAKING POINTS
 =====================================================
 
 */
+/*
+
+=====================================================
+6(I). JOB SCHEDULING PROBLEM
+APPLICATIONS
+=====================================================
+
+1. CPU Scheduling
+2. Manufacturing Job Allocation
+3. Cloud Server Scheduling
+4. Task Management Systems
+5. Airline Timetable Scheduling
+6. Hospital Resource Scheduling
+7. Advertisement Slot Management
+8. Workflow Optimization
+
+
+=====================================================
+6(II). PRIM'S MINIMUM SPANNING TREE
+APPLICATIONS
+=====================================================
+
+1. Computer Network Design
+2. Telephone Network Planning
+3. Electrical Wiring Systems
+4. Railway Track Optimization
+5. Water Supply Networks
+6. Road Construction Planning
+7. Fiber Optic Cable Networks
+8. PCB Circuit Layout Design
+
+*/
